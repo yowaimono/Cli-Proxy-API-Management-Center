@@ -31,7 +31,7 @@ import {
   IconSidebarSystem,
   IconChevronDown,
 } from '@/components/ui/icons';
-import { INLINE_LOGO_JPEG } from '@/assets/logoInline';
+import wengaoLogo from '@/assets/wengao-logo.png?inline';
 import {
   useAuthStore,
   useConfigStore,
@@ -1152,7 +1152,11 @@ export function MainLayout() {
         >
           <div className="sidebar-header">
             <div className="sidebar-brand" title={fullBrandName}>
-              <img src={INLINE_LOGO_JPEG} alt="CPAMC logo" className="sidebar-brand-logo" />
+              <img
+                src={wengaoLogo}
+                alt="问高订阅云托管 logo"
+                className="sidebar-brand-logo"
+              />
               {showSidebarLabels && (
                 <span className="sidebar-brand-text">
                   <span className="sidebar-brand-title">{abbrBrandName}</span>
