@@ -20,6 +20,8 @@ describe('default language', () => {
   test('keeps the Wengao login brand name in every locale', () => {
     for (const locale of [zhCN, zhTW, en, ru]) {
       expect(locale.title.login).toBe('问高云订阅托管平台');
+      expect(locale.title.abbr).toBe('问高云');
+      expect(locale.sidebar.subtitle).toBe('问高云订阅托管平台');
     }
   });
 });

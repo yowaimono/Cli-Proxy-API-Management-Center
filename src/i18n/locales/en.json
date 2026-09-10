@@ -58,7 +58,7 @@
   },
   "title": {
     "login": "问高云订阅托管平台",
-    "abbr": "CPAMC"
+    "abbr": "问高云"
   },
   "splash": {
     "title": "CLI Proxy API",
@@ -1439,7 +1439,7 @@
     "toggle_collapse": "Collapse sidebar",
     "expand": "Expand",
     "collapse": "Collapse",
-    "subtitle": "CLI Proxy API Console",
+    "subtitle": "问高云订阅托管平台",
     "auth_files_count": "Authentication files: {{count}}"
   },
   "footer": {
