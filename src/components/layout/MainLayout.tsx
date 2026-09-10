@@ -349,7 +349,7 @@ export function MainLayout() {
   const themeMenuRef = useRef<HTMLDivElement | null>(null);
   const headerRef = useRef<HTMLElement | null>(null);
 
-  const fullBrandName = 'CLI Proxy API Management Center';
+  const fullBrandName = '问高云订阅托管平台';
   const abbrBrandName = t('title.abbr');
   const isLogsPage = location.pathname.startsWith('/logs');
   const isPluginResourcePage = location.pathname.startsWith('/plugin-pages');

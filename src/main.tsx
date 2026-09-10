@@ -4,7 +4,7 @@ import '@/styles/global.scss';
 import wengaoLogo from '@/assets/wengao-logo.png?inline';
 import App from './App.tsx';
 
-document.title = 'CLI Proxy API Management Center';
+document.title = '问高云订阅托管平台';
 document.documentElement.setAttribute('translate', 'no');
 document.documentElement.classList.add('notranslate');
 
