@@ -23,6 +23,8 @@ describe('default language', () => {
       expect(locale.title.abbr).toBe('问高云');
       expect(locale.sidebar.subtitle).toBe('问高云订阅托管平台');
       expect(locale.system_info.about_title).toBe('问高云订阅托管平台');
+      expect(locale.splash.title).toBe('问高云');
+      expect(locale.splash.subtitle).toBe('订阅托管平台');
     }
   });
 });
