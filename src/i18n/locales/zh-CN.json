@@ -57,7 +57,7 @@
     "unsaved_changes_message": "你有未保存的更改，离开后将丢失这些更改。确定要离开吗？"
   },
   "title": {
-    "login": "CLI Proxy API Management Center",
+    "login": "问高云订阅托管平台",
     "abbr": "CPAMC"
   },
   "splash": {

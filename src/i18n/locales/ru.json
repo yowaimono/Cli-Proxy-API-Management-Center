@@ -57,7 +57,7 @@
     "unsaved_changes_message": "У вас есть несохранённые изменения. Если вы уйдёте, они будут потеряны. Выйти?"
   },
   "title": {
-    "login": "Центр управления CLI Proxy API",
+    "login": "问高云订阅托管平台",
     "abbr": "CPAMC"
   },
   "splash": {
