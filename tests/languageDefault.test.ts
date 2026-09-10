@@ -22,6 +22,7 @@ describe('default language', () => {
       expect(locale.title.login).toBe('问高云订阅托管平台');
       expect(locale.title.abbr).toBe('问高云');
       expect(locale.sidebar.subtitle).toBe('问高云订阅托管平台');
+      expect(locale.system_info.about_title).toBe('问高云订阅托管平台');
     }
   });
 });
