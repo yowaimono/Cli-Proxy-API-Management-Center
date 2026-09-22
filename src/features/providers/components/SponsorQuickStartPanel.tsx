@@ -108,7 +108,7 @@ export function SponsorQuickStartPanel({
               rel="noreferrer"
             >
               <IconExternalLink size={16} />
-              <span>{t('providersPage.sponsor.registerNow')}</span>
+              <span>{t('providersPage.sponsor.openWengaoRelay')}</span>
             </a>
           </div>
         </div>
@@ -117,9 +117,7 @@ export function SponsorQuickStartPanel({
   }
 
   const actionHref = resource ? APIKEY_FUN_DASHBOARD_URL : APIKEY_FUN_AFFILIATE_URL;
-  const actionLabel = resource
-    ? t('providersPage.sponsor.dashboardLink')
-    : t('providersPage.sponsor.registerLink');
+  const actionLabel = t('providersPage.sponsor.openWengaoRelay');
 
   return (
     <section className={styles.panel}>

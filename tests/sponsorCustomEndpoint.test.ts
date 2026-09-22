@@ -11,11 +11,16 @@ import {
   QINIU_CLOUD_PROVIDER_NAME,
 } from '../src/features/providers/qiniuCloud';
 import {
+  APIKEY_FUN_AFFILIATE_URL,
+  APIKEY_FUN_BASE_URL_OPTIONS,
+  APIKEY_FUN_DISPLAY_NAME,
   APIKEY_FUN_OPENAI_BASE_URL,
+  APIKEY_FUN_PROTOCOLS,
   APIKEY_FUN_PROVIDER_NAME,
   buildApiKeyFunRaw,
 } from '../src/features/providers/sponsor';
 import { normalizeConfigResponse } from '../src/services/api/transformers';
+import { getSponsorProviderDefinition } from '../src/features/providers/sponsorDefinitions';
 
 const openAIConfig = (name: string, baseUrl: string) => ({
   openaiCompatibility: [
@@ -45,8 +50,25 @@ const mixedOpenAIConfig = (name: string, officialBaseUrl: string) => ({
 });
 
 describe('sponsor custom endpoint isolation', () => {
-  test('keeps APIKEY.FUN-named custom endpoints in the generic OpenAI group', () => {
+  test('keeps Wengao-named custom endpoints in the generic OpenAI group', () => {
     expect(buildApiKeyFunRaw(customOpenAIConfig(APIKEY_FUN_PROVIDER_NAME)).openai).toEqual([]);
+  });
+
+  test('uses the Wengao relay identity and verified protocol endpoints', () => {
+    expect(APIKEY_FUN_PROVIDER_NAME).toBe('wengaoRelay');
+    expect(APIKEY_FUN_DISPLAY_NAME).toBe('问高云中转站');
+    expect(APIKEY_FUN_AFFILIATE_URL).toBe('https://666666.wengaocloud.com/');
+    expect(APIKEY_FUN_OPENAI_BASE_URL).toBe('https://666666.wengaocloud.com/v1');
+    expect(APIKEY_FUN_PROTOCOLS).toEqual([
+      'anthropic',
+      'openai',
+      'gemini',
+      'codexResponses',
+    ]);
+    expect(APIKEY_FUN_BASE_URL_OPTIONS).toHaveLength(1);
+    const definition = getSponsorProviderDefinition('apikeyFun');
+    expect(definition.protocols).toEqual(['codex', 'claude', 'openai', 'gemini']);
+    expect(definition.supportsUsageCheck).toBe(false);
   });
 
   test('keeps Code0-named custom endpoints in the generic OpenAI group', () => {

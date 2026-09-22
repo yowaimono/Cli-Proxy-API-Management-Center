@@ -57,12 +57,12 @@
     "unsaved_changes_message": "You have unsaved changes. Leaving now will discard them. Do you want to leave?"
   },
   "title": {
-    "login": "CLI Proxy API Management Center",
-    "abbr": "CPAMC"
+    "login": "问高云订阅托管平台",
+    "abbr": "问高云"
   },
   "splash": {
-    "title": "CLI Proxy API",
-    "subtitle": "Management Center"
+    "title": "问高云",
+    "subtitle": "订阅托管平台"
   },
   "login": {
     "subtitle": "Please enter connection information to access the management interface",
@@ -117,7 +117,7 @@
   },
   "nav_meta": {
     "dashboard": "Operations overview",
-    "quick_start": "APIKEY.FUN setup",
+    "quick_start": "问高云中转站 setup",
     "ai_providers": "Upstream model routing",
     "auth_files": "Auth files & credentials",
     "oauth": "OAuth authorization",
@@ -1378,7 +1378,7 @@
   },
   "system_info": {
     "title": "Management Center Info",
-    "about_title": "CLI Proxy API Management Center",
+    "about_title": "问高云订阅托管平台",
     "models_title": "Available Models",
     "models_desc": "Shows the /models response and uses saved API keys for auth automatically.",
     "models_loading": "Loading available models...",
@@ -1439,7 +1439,7 @@
     "toggle_collapse": "Collapse sidebar",
     "expand": "Expand",
     "collapse": "Collapse",
-    "subtitle": "CLI Proxy API Console",
+    "subtitle": "问高云订阅托管平台",
     "auth_files_count": "Authentication files: {{count}}"
   },
   "footer": {
@@ -1481,7 +1481,7 @@
       "claudeApi": "Claudeapi.com",
       "vertex": "Vertex",
       "openaiCompatibility": "OpenAI Compatible",
-      "apikeyFun": "APIKEY.FUN",
+      "apikeyFun": "问高云中转站",
       "code0": "Code0",
       "fennoAI": "FennoAI",
       "qiniuCloud": "Qiniu Cloud",
@@ -1513,6 +1513,7 @@
       "detailHint": "{{provider}} is persisted into the matching API key configs by protocol; this view manages them together.",
       "registerLink": "Register here",
       "registerNow": "Register now",
+      "openWengaoRelay": "Open 问高云中转站",
       "kimiPromo": "New users get API credit worth 10% of their first successful top-up, up to ¥1000. Offer ends September 30.",
       "dashboardLink": "Dashboard",
       "emptyRegisterHint": "No configuration yet.",
