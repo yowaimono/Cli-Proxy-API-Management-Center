@@ -16,7 +16,7 @@ export type Sponsor = {
 
 export const SPONSORS: readonly Sponsor[] = [
   {
-    name: '问高云中转站',
+    name: '问高云纯净IP',
     url: 'https://666666.wengaocloud.com/',
     logo: wengaoLogo,
   },
