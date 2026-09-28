@@ -3,7 +3,7 @@
  * 纯前端常量，与后端配置无关；新增/移除赞助商只需改动这里。
  * 数组为空时赞助行整体不渲染。
  */
-import bestproxyLogo from '@/assets/icons/bestproxy.png';
+import wengaoLogo from '@/assets/wengao-logo.png';
 
 export type Sponsor = {
   /** 赞助商名称（直接展示，不做翻译）。 */
@@ -16,8 +16,8 @@ export type Sponsor = {
 
 export const SPONSORS: readonly Sponsor[] = [
   {
-    name: 'BestProxy.com',
-    url: 'https://bestproxy.com/?keyword=ayh7otlb',
-    logo: bestproxyLogo,
+    name: '问高云中转站',
+    url: 'https://666666.wengaocloud.com/',
+    logo: wengaoLogo,
   },
 ];
